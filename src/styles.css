@@ -1,0 +1,140 @@
+.weather-app {
+  border: 2px solid #006d77;
+  max-width: 600px;
+  align-self: center;
+  margin: 15px auto;
+  padding: 20px;
+  border-radius: 10px;
+  padding-left: 50px;
+  background-color: #7dc5cc;
+}
+
+.form-check {
+  color: #ececec;
+  font-size: 15px;
+}
+
+.active {
+  text-decoration: none;
+  color: #ec6e4c;
+  cursor: default;
+}
+
+.active:hover {
+  text-decoration: none;
+  color: #607981;
+}
+
+a {
+  text-decoration: none;
+  color: #f0efeb;
+}
+.units {
+  font-size: 15px;
+  text-align: right;
+  text-decoration: none;
+  color: #607981;
+  position: relative;
+  top: -20px;
+}
+
+h1,
+h2,
+small {
+  color: #f0efeb;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 13px;
+}
+
+h1 {
+  margin-top: 30px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: monospace;
+  font-weight: 600;
+  color: #006d77;
+  font-size: 30px;
+}
+
+ul,
+.description {
+  list-style: none;
+  color: #ececec;
+  font-family: "Montserrat", sans-serif;
+  padding-left: 0px;
+}
+
+.forecast-main {
+  padding: 15px;
+}
+
+.main-icon {
+  color: #ececec;
+  margin-top: 30px;
+  font-size: 90px;
+  text-align: center;
+}
+
+.current-condition {
+  color: #f0efeb;
+  margin-top: 30px;
+  text-align: right;
+  font-size: 35px;
+}
+
+.forecast-day {
+  color: #ececec;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.forecast-week {
+  text-align: center;
+  margin-top: 30px;
+  margin: 2px;
+}
+
+.weekly-background:hover {
+  background: #4d949b;
+  border-radius: 3px;
+}
+
+.icon {
+  color: #ececec;
+  font-size: 40px;
+  text-align: center;
+}
+
+.low {
+  color: #006d77;
+  font-size: 20px;
+}
+
+#city {
+  color: #006d77;
+}
+
+#date,
+#time {
+  font-size: 20px;
+}
+
+.description {
+  color: #ec6e4c;
+}
+
+.temperature {
+  color: #ececec;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.float-right {
+  margin: 50px 0px;
+}

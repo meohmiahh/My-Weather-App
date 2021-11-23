@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+   
+    <!-- Bootstrap Code -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- END of Bootstrap Code -->
+
+    <!-- Axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- END of Axios -->
+
+    <link rel="stylesheet" href="src/styles.css" />
+
+    <!-- Google Fonts -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- END of Google Fonts -->
+
+    <!-- Font Awesome code-->
+    <script src="https://kit.fontawesome.com/ddc44b112e.js" crossorigin="anonymous"></script>
+    <!-- END of Font Awesome code-->
+
+    <title>Weather App</title>
+  </head>
+<body>
+<div class = "container">
+  <div class="weather-app">
+    <form class = "search-form" id="search-form">
+      <div class="row">
+        <div class ="col-6">
+          <input
+          type="search"
+          placeholder="Enter a city..."
+          autofocus="on"
+          automplete="off"
+          id="city-input" 
+          class="form-control shadow-sm"/>
+        </div>
+        <div class = "col-3">
+        <input
+        type="submit"
+        value="Search"
+        class="form-control btn btn-primary shadow-sm"
+        />
+        </div>
+        <div class="col-3">
+          <button
+          id="current-location-button"
+          type="button"
+          class=" btn btn-secondary"
+          >
+          Current 
+          </button>
+        </div>
+    </form>
+    <div class="row forecast-main">
+      <div class="col-4">
+        <h1 class="currentCity" id="current-city"></h1>
+          <h2></h2>
+          <h3>
+            <ul>
+              <li id ="city"></l1>
+              <li id="date"></li> 
+              <li id="time"></li>
+          </ul>
+          </h3>
+          <ul class = description>
+            <li id ="description"></li>
+            <li>Humidity: <span id = "humidity"></span>%</li>
+            <li>Wind: <span id = "wind"></span>km/h</li>
+          </ul>
+      </div>
+      <div class="col-4 main-icon">
+         <img src="http://openweathermap.org/img/wn/10d@2x.png"
+            id="current-icon">
+      </div>
+      <div class="col-4">
+         <div class="float-right">
+                <span class="temperature" id="temperature"></span
+                ><span class="units">
+                  <a href="#" id="celsius-link">°C</a> |
+                  <a href="#" id="fahrenheit-link">°F</a>
+                </span>
+              </div>
+          
+          <br />
+          <span 
+          id="low"
+          class="low"></span>
+        </p>
+      </div>
+    </div>
+  
+  <div class= "row forecast-week">
+    <div class = "col-2">
+      <div class= "weekly-background">
+        <span class ="forecast-day">
+          Tue 
+          <br />
+          <i class="fas fa-cloud-sun icon"></i>
+          <br />
+          28°
+        </span>
+        <br />
+        <span class ="low">10°</span>
+      </div>
+    </div>
+
+     <div class="col-2">
+            <div class="weekly-background">
+            <span class="forecast-day">
+              Wed
+              <br />
+              <i class="fas fa-cloud-sun icon"></i>
+              <br />
+              30°
+            </span>
+            <br />
+            <span class="low"> 14° </span>
+          </div>
+          </div>
+
+          <div class="col-2">
+            <div class="weekly-background">
+            <span class="forecast-day">
+             Thur
+              <br />
+              <i class="fas fa-cloud-showers-heavy icon"></i>
+              <br />
+              32°
+            </span>
+            <br />
+            <span class="low"> 19° </span>
+          </div>
+          </div>
+
+          <div class="col-2">
+            <div class="weekly-background">
+            <span class="forecast-day">
+              Fri
+              <br />
+              <i class="fas fa-bolt icon"></i>
+              <br />
+              32°
+            </span>
+            <br />
+            <span class="low"> 19° </span>
+          </div>
+          </div>
+
+          <div class="col-2">
+            <div class="weekly-background">
+            <span class="forecast-day">
+              Sat
+              <br />
+              <i class="fas fa-sun icon"></i>
+              <br />
+              32°
+            </span>
+            <br />
+            <span class="low"> 17° </span>
+          </div>
+          </div>
+
+          <div class="col-2">
+            <div class="weekly-background">
+            <span class="forecast-day">
+              Sun
+              <br />
+              <i class="fas fa-sun icon"></i>
+              <br />
+              30°
+            </span>
+            <br />
+            <span class="low"> 10° </span>
+          </div>
+          </div>
+        </div>
+
+
+  </div>
+  </div>
+</div>
+
+
+
+
+    <script src="src/index.js"></script>
+</body>
+</html>
