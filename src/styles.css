@@ -139,13 +139,20 @@ ul,
   margin: 50px 0px;
 }
 
-.footer, 
+.footer,
 #footer {
-font-size: 15px;
-padding-left: 10px;
+  font-size: 15px;
+  padding-left: 10px;
 }
 
-a.footer{
-    color: #006d77;
+a.footer {
+  color: #006d77;
 }
 
+.weather-temperature .active{
+    color: black;
+    cursor: default;
+}
+.weather-temperature .active:hover{
+    text-decoration: none;
+}
