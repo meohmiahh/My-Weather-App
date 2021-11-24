@@ -149,10 +149,10 @@ a.footer {
   color: #006d77;
 }
 
-.weather-temperature .active{
-    color: black;
-    cursor: default;
+.weather-temperature .active {
+  color: black;
+  cursor: default;
 }
-.weather-temperature .active:hover{
-    text-decoration: none;
+.weather-temperature .active:hover {
+  text-decoration: none;
 }
