@@ -96,13 +96,14 @@ ul,
 
 .forecast-week {
   text-align: center;
-  margin-top: 30px;
-  margin: 2px;
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
 .weekly-background:hover {
   background: #4d949b;
   border-radius: 3px;
+  width: 60px;
 }
 
 .icon {
