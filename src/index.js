@@ -24,6 +24,58 @@ function formatDate(date) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast(){
+  let forecastElement = document.querySelector("#forecast");
+  
+  let forecastHTML = `<div class ="row">`;
+  forecastHTML = 
+    forecastHTML + 
+    ` 
+    <div class = "col-2">
+      <div class= "weekly-background">
+        <span class ="forecast-day">
+          Tue </span>
+          <br />
+          <img 
+          src = "http://openweathermap.org/img/wn/50d@2x.png"
+          alt = ""
+          width = "42"
+          class="fas fa-cloud-sun icon"/>
+          <br />
+          <span class = "high">28°</span>
+        </span>
+        <br />
+        <span class ="low">10°</span>
+      </div>
+      </div>
+      `;
+
+ // forecastHTML =
+ // forecastHTML +
+  // ` 
+    //<div class = "col-2">
+     // <div class= "weekly-background">
+      //  <span class ="forecast-day">
+      //    Tue </span>
+       //   <br />
+        // <img 
+         //  src = "http://openweathermap.org/img/wn/50d@2x.png"
+          // alt = ""
+         // width = "42"
+          // class="fas fa-cloud-sun icon"/>
+          // <br />
+         // <span class = "high">28°</span>
+        // </span>
+       // <br />
+      //  <span class ="low">10°</span>
+       // </div>
+      // </div>`;
+
+  // forecastHTML = forecastHTML + `</div`;
+  // forecastElement.innerHTML = forecastHTML;
+
+}
+
 function displayWeatherCondition(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
@@ -89,6 +141,8 @@ function displayCelsiusTemperature(event) {
 
 let celsiusTemperature = null;
 
+
+
 //curent date and time
 let dateElement = document.querySelector("#date");
 let currentTime = new Date();
@@ -109,3 +163,5 @@ let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("New York");
+
+displayForecast();
