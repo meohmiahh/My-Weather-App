@@ -25,15 +25,14 @@ function formatDate(date) {
 }
 
 function formatDay(timestamp) {
-let date = new Date(timestamp * 1000);
-let day = date.getDay();
-let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" ]
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-return days[day];
-  
+  return days[day];
 }
 
-function displayForecast(response){
+function displayForecast(response) {
   let forecast = response.data.daily;
 
   let forecastElement = document.querySelector("#forecast");
@@ -69,12 +68,11 @@ function displayForecast(response){
     }
   });
 
-   forecastHTML = forecastHTML + `</div`;
-   forecastElement.innerHTML = forecastHTML;
-
+  forecastHTML = forecastHTML + `</div`;
+  forecastElement.innerHTML = forecastHTML;
 }
 
-function getForecast(coordinates){
+function getForecast(coordinates) {
   let apiKey = "9f2b26dba12b93ed4f31f1905e626c93";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
   axios.get(apiUrl).then(displayForecast);
@@ -103,8 +101,7 @@ function displayWeatherCondition(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
-getForecast(response.data.coord); 
-
+  getForecast(response.data.coord);
 }
 
 function searchCity(city) {
@@ -139,9 +136,7 @@ dateElement.innerHTML = formatDate(currentTime);
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 
-
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("New York");
-

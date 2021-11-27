@@ -112,13 +112,13 @@ ul,
   text-align: center;
 }
 
-#icon{
+#icon {
   margin: 30px 12px;
 }
 
-.weather-forecast-temperature-max{
-   color: #ececec;
-   font-size: 20px
+.weather-forecast-temperature-max {
+  color: #ececec;
+  font-size: 20px;
 }
 
 .weather-forecast-temperature-min {
