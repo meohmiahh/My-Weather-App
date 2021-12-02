@@ -21,7 +21,11 @@ function formatDate(date) {
   ];
   let day = days[dayIndex];
 
-  return `${day} ${hours}:${minutes}`;
+  return `${day} ${date.toLocaleString("en-US", {
+    hour: "numeric",
+    minute: "numeric",
+    hour12: true,
+  })}`;
 }
 
 function formatDay(timestamp) {
